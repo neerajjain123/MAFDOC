@@ -19,7 +19,7 @@ The intended audience for this document includes (but not limited to) enterprise
 This chapter provides a high level overview & description of the overall integration architecture and design approach being taken for the Use Case(s), typically a diagrammatic representation of the overall integration design being substantiated in detail by the subsequent sections.
 ### SystemContext diagram
 
-
+!System_Context.png
 
 
 3. [Design Approach](./DesignApproach/index.md)
