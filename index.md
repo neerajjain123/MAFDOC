@@ -1,4 +1,3 @@
-# Index
 
 ## Introduction 
 This chapter identifies the document and the engagement to which it relates, describes the contents of the document, and states its purpose.
@@ -77,7 +76,3 @@ This chapter provides a high level overview & description of the overall integra
 
 
 
-5. [Interfaces](./Interfaces/index.md)
-6. [Data Model](./DataModel/index.md)
-7. [UseCases](./Usecases/index.md)
-8. [Environmental Details](./env/index.md)

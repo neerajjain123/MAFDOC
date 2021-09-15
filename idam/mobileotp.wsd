@@ -1,0 +1,54 @@
+@startuml mobileotp
+
+skinparam BoxPadding 20
+skinparam sequenceArrowThickness 2
+skinparam SequenceGroupBodyBackgroundColor transparent
+
+actor User
+box "User's Device" #LightBlue
+    participant "Native" as V
+    participant "Web View" as W
+end box
+
+
+box "Core Backend" #LightBlue
+    participant "IAM Server" as myjio
+end box
+
+box "API Gateway" #LightBlue
+    participant "API Gateway" as APIGW
+end box
+
+
+box "Microservice" #LightBlue
+    participant "L1Auth" as l1Auth
+end box
+
+|||
+    
+    group 1. User Login to app
+        autonumber "<b>[000]</b>"
+        User ->> V: Lauch maf Application
+        V ->> myjio: Login User
+        myjio ->> V: Login Response
+        V ->> User: Dashboard displayed
+        User ->> V: User Click on Bank
+        ' note right of V: Both L1 and L2 Authentication done Successfully
+        V ->> APIGW: CreateSession
+        ref over V, APIGW : Refer Session Creation in Common Section
+        APIGW ->> V: Session Id returned
+        V ->> myjio: Get Token
+        myjio ->> V: Token returned
+        V ->> APIGW: Validate Token (oauth Token, app)
+        APIGW ->>l1Auth : Validate Token (oauth Token, maf)
+        l1Auth ->> myjio: Validate Token (Token)
+        myjio ->> l1Auth: Validation Successful 
+        l1Auth ->> APIGW: Validation Successful
+        APIGW ->> APIGW: Mark session as L1 Authenticated
+        APIGW ->> V: Validation Successful
+        V ->> User: Show Dashboard
+        
+    end
+
+
+@enduml
