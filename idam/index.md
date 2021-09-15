@@ -6,14 +6,30 @@ IAM is the centralized system managing the identity of Carrefour Customers and p
 
 
 ## Usecases
+### Login with Mobile OTP
 
-1. Login with Mobile OTP
+Mobile-OTP is the primary way of logging into app. Once logged in, user can browse through the mini apps without entering OTP. OAuth token is generated and being passed to micro app’s after each toggle. It is micro app’s responsibility to validate OAuth token and allow access to the customer. Any invalid attempt should result in 401 unauthorized access. 
+ 
 ![uc1](./mobileotp.png)
 
-1. Social Login
+### Login using Social Login
+
 ![uc2](./mobileotp.png)
 
 ## Interfaces 
+### API to validate OAuth Token
+
+Description: This is server to server API which will allow multiple microapps to validate OAuth token.
+
+Method: Post
+
+Endpoint: http://IP:PORT/ v1/jm/l1auth/validate/oauthtoken 
+
+
+Request Headers:
+
+' JEPEvent: SequenceID |  EventRawName |  EventDateTime ------ | ------ | ------ | ------ |
+
 
 
 
