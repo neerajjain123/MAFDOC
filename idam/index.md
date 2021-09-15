@@ -34,8 +34,12 @@ Name |  Type |  Mandatory | Description |
  X-TRACE-ID|	String | No	| Shared by channel to maintain end to end tracing
  X-API-KEY|	String | Yes | This is for authenticating initiating channel.
 
+Request Payload : 
 
- 
+Name |  Type |  Mandatory | Description |
+------ | ------ | ------ | ------ 
+ OAuthToken |  String | Yes|  Token provided by Native app over JS bridge | 
+ Checksum |  String | Yes|   | 
 
 
 
