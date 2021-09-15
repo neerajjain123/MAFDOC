@@ -40,43 +40,43 @@ This chapter provides a high level overview & description of the overall integra
 
 ### Integrations
 
-1. Entreprise service bus
-2. Bussiness Process workflow
-3. Microservices (Rest/Web ineterface) 
+1. [Entreprise service bus](./DesignApproach/index.md)
+2. [Bussiness Process workflow](./DesignApproach/index.md)
+3. [Microservices (Rest/Web ineterface)](./DesignApproach/index.md)
 
 ### Enterprise system layer
 
 #### Catalog
 #### Inventory
 
-1. SAP CRM
-2. One Click
-3. SAP HANA
-4. MDM
+1. [SAP CRM](./DesignApproach/index.md)
+2. [One Click](./DesignApproach/index.md)
+3. [SAP HANA](./DesignApproach/index.md)
+4. [MDM](./DesignApproach/index.md)
 #### Fulfilment
 
-1. Order Management system
-2. Last Mile 
-3. Notification systme
+1. [Order Management system](./DesignApproach/index.md)
+2. [Last Mile](./DesignApproach/index.md)
+3. [Notification system](./DesignApproach/index.md)
 
 #### Billing & Payment
 
-1. Payment gateway integration 
-2. Loyality point integration
-3. Accounting and reconcilliation 
-4. Partner settlement system
+1. [Payment gateway integration](./DesignApproach/index.md)
+2. [Loyality point integration](./DesignApproach/index.md)
+3. [Accounting and reconcilliation](./DesignApproach/index.md)
+4. [Partner settlement system](./DesignApproach/index.md)
+5. [Fraud detection and Revention system](./DesignApproach/index.md)
 
 #### Common
 
-1. Identity and access management 
-2. notification engine
-3. 
+1. [Identity and access management](./idam/index.md)
+2. [notification engine](./DesignApproach/index.md)
+ 
+## Deployment diagram
+![test](./DeploymentArchiteture.png)
 
 
 
-
-3. [Design Approach](./DesignApproach/index.md)
-4. [Components](./Components/index.md)
 5. [Interfaces](./Interfaces/index.md)
 6. [Data Model](./DataModel/index.md)
 7. [UseCases](./Usecases/index.md)
