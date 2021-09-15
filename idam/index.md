@@ -41,9 +41,12 @@ Name |  Type |  Mandatory | Description |
  OAuthToken |  String | Yes|  Token provided by Native app over JS bridge | 
  Checksum |  String | Yes|   | 
 
+Response Payload : 
+
+Name |  Type |  Mandatory | Description |
+------ | ------ | ------ | ------ 
+ isTokenValid|  Boolean | Yes|  Possible value true and false. User should be allowed to proceed only if value is true. | 
+ primaryMobileNumber|	String | No	| This is a user primary myjio logged in number.  This value will be returned if the isTokenValid flag is true. 
+ userId|	String | No | This is a userid which can be used for address/profile management. This value will be returned if the isTokenValid flag is true.
 
 
-
-5. [Interfaces](./Interfaces/index.md)
-6. [Data Model](./DataModel/index.md)
-7. [UseCases](./Usecases/index.md)
