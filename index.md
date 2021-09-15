@@ -21,6 +21,60 @@ This chapter provides a high level overview & description of the overall integra
 
 ![test](./System_Context.png)
 
+### Key Concept
+
+#### Actores
+
+1. Content Manager
+2. Customer care agent
+3. Customers
+4. Merchant Onboarding team
+5. Prodcut Catalog Manager
+6. Channel sales team
+
+### Channels
+
+1. Mobile application
+2. Web Interface
+
+
+### Integrations
+
+1. Entreprise service bus
+2. Bussiness Process workflow
+3. Microservices (Rest/Web ineterface) 
+
+### Enterprise system layer
+
+#### Catalog
+#### Inventory
+
+1. SAP CRM
+2. One Click
+3. SAP HANA
+4. MDM
+#### Fulfilment
+
+1. Order Management system
+2. Last Mile 
+3. Notification systme
+
+#### Billing & Payment
+
+1. Payment gateway integration 
+2. Loyality point integration
+3. Accounting and reconcilliation 
+4. Partner settlement system
+
+#### Common
+
+1. Identity and access management 
+2. notification engine
+3. 
+
+
+
+
 3. [Design Approach](./DesignApproach/index.md)
 4. [Components](./Components/index.md)
 5. [Interfaces](./Interfaces/index.md)
