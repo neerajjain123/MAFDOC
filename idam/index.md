@@ -30,9 +30,8 @@ Request Headers:
 
 Name |  Type |  Mandatory | Description |
 ------ | ------ | ------ | ------ 
-
- X-CHANNEL-ID|  String |  Yes|  Channel Name | 
- X-TRACE-ID|	String |No	| Shared by channel to maintain end to end tracing
+ X-CHANNEL-ID|  String | Yes|  Channel Name | 
+ X-TRACE-ID|	String | No	| Shared by channel to maintain end to end tracing
 
 
 
